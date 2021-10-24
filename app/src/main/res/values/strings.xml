@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Sienestajan_Askelmittari</string>
+    <string name="tavoiteView">(tavoite)</string>
+    <string name="Tavoite">Tallenna tavoite</string>
+</resources>

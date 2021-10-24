@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="false"
+    android:background="@drawable/metsabg"
+    tools:context=".MainActivity">
+
+    <!--
+    -->
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifImageView"
+        android:layout_width="249dp"
+        android:layout_height="304dp"
+        android:background="#00ffffff"
+        android:src="@drawable/transgiphy"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.76" />
+
+    <LinearLayout
+        android:id="@+id/container1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.201"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.407">
+
+        <ImageButton
+            android:id="@+id/lista"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00ffffff"
+            android:onClick="listaPressed"
+            android:scaleType="fitXY"
+            android:src="@drawable/btnsieni1" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="#00ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.552"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.139">
+
+        <ImageButton
+            android:id="@+id/tiedot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00ffffff"
+            android:onClick="tiedotPressed"
+            android:scaleType="fitXY"
+            android:src="@drawable/btnsieni1" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container3"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.885"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.426">
+
+        <ImageButton
+            android:id="@+id/yhteenveto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00ffffff"
+            android:onClick="yhteenvetoPressed"
+            android:scaleType="fitXY"
+            android:src="@drawable/btnsieni1" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container4"
+        android:layout_width="56dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="16dp"
+        android:background="#00ffffff"
+        app:layout_constraintBottom_toBottomOf="@+id/tavoite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.709"
+        app:layout_constraintStart_toEndOf="@+id/tavoite"
+        app:layout_constraintTop_toBottomOf="@+id/tavoite"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageButton
+            android:id="@+id/sendButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00ffffff"
+            android:onClick="setTavoite"
+            android:scaleType="fitXY"
+            android:src="@drawable/btnsieni1" />
+
+
+    </LinearLayout>
+
+
+
+    <ImageView
+        android:id="@+id/Askeleet"
+        android:layout_width="184dp"
+        android:layout_height="130dp"
+        app:layout_constraintBottom_toBottomOf="@+id/container2"
+        app:layout_constraintEnd_toEndOf="@+id/container2"
+        app:layout_constraintHorizontal_bias="0.366"
+        app:layout_constraintStart_toStartOf="@+id/container2"
+        app:layout_constraintTop_toTopOf="@+id/container2"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/askeleet" />
+
+
+    <ImageView
+        android:id="@+id/InfoTeksti"
+        android:layout_width="123dp"
+        android:layout_height="101dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/container3"
+        app:layout_constraintEnd_toEndOf="@+id/container3"
+        app:layout_constraintHorizontal_bias="0.391"
+        app:layout_constraintStart_toStartOf="@+id/container3"
+        app:layout_constraintTop_toTopOf="@+id/container3"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/info" />
+
+    <ImageView
+        android:id="@+id/Tavoite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/container1"
+        app:layout_constraintEnd_toEndOf="@+id/container1"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="@+id/container1"
+        app:layout_constraintTop_toTopOf="@+id/container1"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/listaus" />
+
+    <TextView
+        android:id="@+id/TextView"
+        android:layout_width="218dp"
+        android:layout_height="23dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Päivän tavoite "
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/gifImageView"
+        app:layout_constraintEnd_toEndOf="@+id/gifImageView"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="@+id/gifImageView"
+        app:layout_constraintTop_toTopOf="@+id/gifImageView"
+        app:layout_constraintVertical_bias="0.882" />
+
+    <TextView
+        android:id="@+id/tavoiteView"
+        android:layout_width="218dp"
+        android:layout_height="21dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/TextView"
+        app:layout_constraintStart_toStartOf="@+id/TextView"
+        app:layout_constraintTop_toBottomOf="@+id/TextView" />
+
+    <EditText
+        android:id="@+id/tavoite"
+        android:layout_width="218dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="SYÖTÄ TÄHÄN"
+        android:inputType="number"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tavoiteView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tavoiteView"
+        app:layout_constraintTop_toTopOf="@+id/tavoiteView" />
+
+
+    <TextView
+        android:id="@+id/TallennaText"
+        android:layout_width="68dp"
+        android:layout_height="19dp"
+        android:text="TALLENNA"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/container4"
+        app:layout_constraintEnd_toEndOf="@+id/container4"
+        app:layout_constraintStart_toStartOf="@+id/container4" />
+
+
+
+</android.support.constraint.ConstraintLayout>
